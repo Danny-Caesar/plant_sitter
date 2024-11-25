@@ -7,12 +7,14 @@
 <body>
     <h1>식물 데이터</h1>
     <table>
+        {% for data in datalist %}
             <ul>
                 <li>soil_moisture: {{data.soil_moisture}}</li>
                 <li>temperature: {{data.temperature}}</li>
                 <li>humidity: {{data.humidity}}</li>
                 <li>illuminance: {{data.illuminance}}</li>
             </ul>
+        {% endfor %}
     </table>
 </body>
 </html>
